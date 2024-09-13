@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bodyElement">
+  <div class="container">
+    <div class="form" id="Idform">
+      <div class="main-wrapper">
+        <div class="formbold-form-wrapper">
+          <form>
+            <h1 class="ICG">Id card Generator</h1>
+            <div class="formbold-form-step-1 active">
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="firstname" class="formbold-form-label"> Name </label>
+                  <input required type="text" name="firstname" placeholder="Enter Your Name" id="firstname"
+                    class="formbold-form-input" />
+                </div>
+                <div>
+                  <label for="fname" class="formbold-form-label"> Father Name </label>
+                  <input required type="text" name="lastname" placeholder="Enter your father name" id="fname"
+                    class="formbold-form-input" />
+                </div>
+              </div>
+
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="dob" class="formbold-form-label"> Date of Birth </label>
+                  <input required type="date" name="dob" id="dob" class="formbold-form-input" />
+                </div>
+                <div>
+                  <label for="rname" class="formbold-form-label"> Roll Number </label>
+                  <input required type="number" name="number" placeholder="9801" id="rname"
+                    class="formbold-form-input" />
+                </div>
+              </div>
+
+              <div>
+                <label for="address" class="formbold-form-label"> Address </label>
+                <input required type="text" name="address" id="address"
+                  placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY" class="formbold-form-input" />
+              </div>
+              <br>
+              <div>
+                <input type="file" id="upload">
+                <label class="lab" for="upload">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                  choose your photo
+                </label>
+              </div>
+            </div>
+            <div class="button-div">
+              <!-- <button class="formbold-btn mainSyle">Submit</button> -->
+              <button class="formbold-btn mainSyle" onsubmit="generat()">
+                Generat
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1675_1807)">
+                    <path
+                      d="M10.7814 7.33312L7.20541 3.75712L8.14808 2.81445L13.3334 7.99979L8.14808 13.1851L7.20541 12.2425L10.7814 8.66645H2.66675V7.33312H10.7814Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1675_1807">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cardContainer">
+      <div class="prinPage" id="Data">
+        <div class="card_contain">
+          <div class="t-tex">
+            <h1 class="iCard">IDENTIFICATION CARD</h1>
+          </div>
+          <div class="contain-wrap">
+            <div class="pf-image display"><img width="200px" src="Unknown_person.jpg" alt="Image"></div>
+            <div class="user-data">
+              <h3 class="heading-3" id="userName">
+                Name: <span class="sameSpan1 color-re" id="user-Name">sample GEOF</span>
+              </h3>
+              <h3 class="heading-3" id="fName">
+                F/Name: <span class="sameSpan2 color-re" id="user-fName">sample</span>
+              </h3>
+              <h3 class="heading-3" id="DOB">
+                DOB: <span class="sameSpan3 color-re" id="user-DOB">12-03-2023</span>
+              </h3>
+              <h3 class="heading-3" id="Roll">
+                Roll No: <span class="sameSpan4 color-re" id="user-rNum">9801</span>
+              </h3>
+              <h3 class="heading-3" id="Address">
+                Address: <span class="sameSpan5 color-re" id="user-Address">Pakistan city, karachi</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardButtons">
+        <div id="print"></div> <button onclick="saveImage()" id="saveI" class="formbold-btn">Save</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/ebf7970d3f.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

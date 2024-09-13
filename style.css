@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    /* overflow: hidden; */
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.ICG {
+    color: #07074d89;
+    /* margin-left: 8pc; */
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 12px #07074d55;
+}
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.formbold-form-wrapper {
+    /* margin: 0 auto; */
+    max-width: 550px;
+    width: 100%;
+    background: white;
+}
+
+.formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.formbold-input-flex>div {
+    width: 50%;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+}
+
+.formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-form-label {
+    color: #07074D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formbold-form-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.formbold-back-btn {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: none;
+    color: #07074D;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+}
+
+.formbold-back-btn.active {
+    display: block;
+}
+
+.formbold-btn {
+    /* margin-left: 25.5pc; */
+    margin-top: 15px;
+    box-shadow: 0px 0px 12px #3a8abbb0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6A64F1;
+    color: white;
+    cursor: pointer;
+}
+
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cardContainer {
+    padding: 5.8pc 3pc;
+}
+
+.card_contain {
+    background: ghostwhite;
+    box-shadow: 0px 0px 12px #66339952;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.415);
+
+}
+
+.t-tex {
+    padding: 18px 58px;
+    background: rebeccapurple;
+    color: white;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    font-size: 13px;
+    text-shadow: 0px 0px 13px #00800096;
+    text-align: center;
+}
+
+.contain-wrap {
+    padding: 1.2pc 1.5pc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.user-data {
+    padding: 0px 25px;
+}
+
+.heading-3 {
+    color: #070798cb;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.sameSpan1 {
+    padding-left: 40px;
+}
+
+.sameSpan2 {
+    padding-left: 24px;
+}
+
+.sameSpan3 {
+    padding-left: 54px;
+}
+
+.sameSpan4 {
+    padding-left: 34px;
+}
+
+.sameSpan5 {
+    padding-left: 23px;
+}
+
+.color-re {
+    color: rgba(102, 51, 153, 0.655);
+}
+
+.display {
+    margin-top: 12px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px #6633994a;
+    border: 2px solid rgba(0, 0, 0, 0.415);
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#upload {
+    display: none;
+}
+
+.lab {
+    background: rgba(137, 43, 226, 0.648);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* uploaded image */
+img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.mainSyle {
+    background: rgba(137, 43, 226, 0.648) !important;
+    font-weight: 900 !important;
+    margin-top: 20px !important;
+    box-shadow: -7px 4px 26px rgba(137, 43, 226, 0.648) !important
+}
+
+.cardButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+span {
+    cursor: default;
+}
+
+.button-div {
+    display: flex;
+    gap: 22px;
+}
